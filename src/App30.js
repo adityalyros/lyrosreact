@@ -9,7 +9,7 @@ export default function App30() {
     setcount(count + 10);
   };
   const handleObj = () => {
-    // setobj({" name":"Cathy"});
+    // setobj({"name":"Cathy"});
     setobj({ ...obj, name: "Cathy" });
     // setobj((prev) => ({ ...prev, name: "Cathy" }));
   };
@@ -35,7 +35,7 @@ export default function App30() {
       {JSON.stringify(obj)}
       <hr></hr>
       <button onClick={handleArr}>Set Array</button>
-      {arr}
+      {JSON.stringify(arr)}
       <hr></hr>
       <button onClick={handleArrObj}>Set Array of Objects</button>
       {JSON.stringify(arrObj)}
